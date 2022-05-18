@@ -12,14 +12,14 @@ TLDR: An exploratory attempt to build a hangman web application using React Fram
 * Backend - NodeJS? _Optional_
 
 ## Screenshots
-Mobile Viewport (< 640px) [Placeholder] <br>
-Tablet (< 1007px) [Placeholder] <br>
-Desktop (1008px >) [Placeholder] <br>
+* Mobile Viewport (< 640px) [Placeholder] <br>
+* Tablet (< 1007px) [Placeholder] <br>
+* Desktop (1008px >) [Placeholder] <br>
 
 ## Video Recording
-Mobile Viewport (< 640px) [Placeholder] <br>
-Tablet (< 1007px) [Placeholder] <br>
-Desktop (1008px >) [Placeholder] <br>
+* Mobile Viewport (< 640px) [Placeholder] <br>
+* Tablet (< 1007px) [Placeholder] <br>
+* Desktop (1008px >) [Placeholder] <br>
 
 ## To Get Started 
 1. Ensure that you have NodeJS, NPM installed.
