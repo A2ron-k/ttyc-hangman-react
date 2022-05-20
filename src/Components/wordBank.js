@@ -15,7 +15,7 @@ function WordBank() {
 	];
 	let correctWord = words[Math.floor(Math.random() * words.length)];
 	return (
-		<div className="wordbank">
+		<div className="word-bank">
 			<h1>{correctWord}</h1>
 		</div>
 	);

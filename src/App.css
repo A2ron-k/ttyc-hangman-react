@@ -1,1 +1,8 @@
 /* Insert CSS here for App.js*/
+
+.mistake-counter{
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

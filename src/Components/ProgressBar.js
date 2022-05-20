@@ -8,24 +8,19 @@ import stepFive from "../imgs/five.png";
 import stepSix from "../imgs/six.png";
 
 function ProgressBar(props) {
-    // const maxMistakes = 6;
-    // const noOfMistakes = props.noOfMistakes;
-    let noOfMistakes = 0;
+	let noOfMistakes = props.noOfMistakes;
 	const imgStepsArr = [
 		stepStart, // 0
-		stepOne,   // 1
-		stepTwo,   // 2
+		stepOne, // 1
+		stepTwo, // 2
 		stepThree, // 3
-		stepFour,  // 4
-		stepFive,  // 5
-		stepSix,   // 6
+		stepFour, // 4
+		stepFive, // 5
+		stepSix, // 6
 	];
 
-    
-
-
 	return (
-		<div className="ProgressBar">
+		<div className="progress-bar">
 			<img src={imgStepsArr[noOfMistakes]} alt=""></img>
 		</div>
 	);
