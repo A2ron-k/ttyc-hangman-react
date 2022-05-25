@@ -121,6 +121,13 @@ class App extends Component {
 		return (
 			<div>
 				<Header />
+        
+        <div>
+					<img
+						src={this.defaultState.graphics[this.state.mistake]}
+						alt=""
+					></img>
+				</div>
 
 				<div>
 					<p>Hint: {this.state.desc}</p>
