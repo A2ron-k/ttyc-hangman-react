@@ -30,7 +30,7 @@ class App extends Component {
 			.then((response) => response.json())
 			.then((data) =>
 				this.setState({
-					random_ans: data[0]["word"],
+					random_ans: data[0]["word"].toLowerCase(),
 					desc: data[0]["definition"],
 				})
 			);
@@ -55,16 +55,20 @@ class App extends Component {
 	generateKeyboard() {
 		const keys = "qwertyuiopasdfghjklzxcvbnm";
 		return keys.split("").map((letter) => (
-			<button
-				key={letter}
-				value={letter}
-				onClick={this.handleGuess}
-				disabled={this.state.guess.has(letter)}
-			>
-				{letter}
-			</button>
+			<>
+				<button
+					key={letter}
+					value={letter}
+					onClick={this.handleGuess}
+					disabled={this.state.guess.has(letter)}
+				>
+					{letter.toUpperCase()}
+				</button>
+				<div class="space"></div>
+			</>
 		));
 	}
+
 
 	/** This is a function that is called when the user clicks on a letter.
 	 * It takes the value of the letter and adds it to the state.guess.
@@ -97,7 +101,7 @@ class App extends Component {
 		this.setState({
 			mistake: 0,
 			guess: new Set([]),
-      random_ans: "",
+			random_ans: "",
 			desc: "",
 		});
 		this.reFetch();
@@ -108,9 +112,8 @@ class App extends Component {
 		const gameFin = this.state.mistake >= this.defaultState.maxWrong;
 		let keyboard = this.generateKeyboard();
 		const isWinner = this.guessedWord().join("") === this.state.random_ans;
-    
 
-    if (isWinner === true) {
+		if (isWinner === true) {
 			keyboard = " You have won";
 		}
 
@@ -119,21 +122,29 @@ class App extends Component {
 		}
 
 		return (
-			<div>
+			<div className="main-container">
 				<Header />
-        
-        <div>
+
+				<div>
+					Wrong Guesses: {this.state.mistake} of{" "}
+					{this.defaultState.maxWrong}
+				</div>
+
+				<div className="graphic-container">
 					<img
 						src={this.defaultState.graphics[this.state.mistake]}
 						alt=""
 					></img>
 				</div>
 
-				<div>
+				<div className="input-container">
 					<p>Hint: {this.state.desc}</p>
 					<p>Win/Loss</p>
-					<p>{!gameFin ? this.guessedWord() : this.state.random_ans}</p>
-					<p>{keyboard}</p>
+					<p>
+						{!gameFin ? this.guessedWord() : this.state.random_ans}
+					</p>
+					<div className="keyboard-container">{keyboard}</div>
+          <br/>
 					<button onClick={this.resetGame}>Reset</button>
 				</div>
 			</div>

@@ -1,8 +1,10 @@
 /* Insert CSS here for App.js*/
+.space {
+    width: 4px;
+    height: auto;
+    display: inline-block;
+}
 
-.mistake-counter{
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.keyboard-container{
+
 }
