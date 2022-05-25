@@ -1,14 +1,23 @@
 import "./App.css";
-import React from "react";
+import React, { Component } from 'react';
+import Header from "./Components/Header";
 
-function App() {
 
-	return (
-  <div className="app">
-    {/* Possible place to add code */}
+class App extends Component {
+  constructor(props) {
+    super(props);
+  }
+  state = { 
 
-  </div>
-  );
+  }
+
+
+  render() { 
+    return ( 
+      <Header/>
+      
+    );
+  }
 }
 
 export default App;
