@@ -139,7 +139,7 @@ class App extends Component {
 
 				<div className="input-container">
 					<p>Hint: {this.state.desc}</p>
-					<p>Win/Loss</p>
+
 					<p>
 						{!gameFin ? this.guessedWord() : this.state.random_ans}
 					</p>
