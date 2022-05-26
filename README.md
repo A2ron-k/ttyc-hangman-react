@@ -5,11 +5,10 @@ TLDR: An exploratory attempt to build a hangman web application using React Fram
 
 ### TikTok Team Group 3
 * Team Lead: Aaron Kwah
-* Team Members: 
+* Team Members: Aaron Kwah
 
 ## Tech Stack 
 * Frontend - Javascript, HTML, CSS, and React
-* Backend - NodeJS? _Optional_
 
 ## Screenshots
 * Mobile Viewport (< 640px) [Placeholder] <br>
