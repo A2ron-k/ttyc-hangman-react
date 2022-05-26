@@ -3,7 +3,7 @@ TLDR: An exploratory attempt to build a hangman web application using React Fram
 
 ## Project Particulars
 
-### TikTok Team Group 3
+### TikTok Team
 * Team Lead: Aaron Kwah
 * Team Members: Aaron Kwah
 
