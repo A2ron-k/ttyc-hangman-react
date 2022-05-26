@@ -1,10 +1,117 @@
 /* Insert CSS here for App.js*/
-.space {
-    width: 4px;
-    height: auto;
-    display: inline-block;
+
+html{
+    background: #F1FAEE;
 }
 
-.keyboard-container{
+.primary-container{
+    position: absolute;
+    min-width: 100vw;
+    width: 100vw;
+    margin: 0;
+    padding-bottom: 20px;
 
+}
+
+.main-container {
+    text-align: center;
+	display: inline-block;
+    width: 100vw;
+    
+}
+
+.header-container {
+	text-align: center;
+	display: inline-block;
+	width: 250px;
+	margin-top: 0;
+}
+
+.mistake-counter {
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+#guess-text{
+    display: inline-block;
+    text-align: center;
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+
+.graphic-container {
+    width: 250px;
+}
+
+.keyboard-container {
+	text-align: center;
+	display: inline-block;
+	width: 250px;
+	margin-top: 0;
+}
+
+.keyboard-container button {
+	border: 1px;
+    border-radius: 30px;
+	font-family: inherit;
+	font-size: 1rem;
+	cursor: pointer;
+	width: 30px;
+	margin: 5px 2px 2px 2px;
+	letter-spacing: 1px;
+	outline: none;
+	background: #1D3557;
+	color: #fff;
+	box-shadow: 0 4px 2px #111f34;
+	padding-top: 4px;
+}
+
+.keyboard-container button:hover {
+	background-color: #0097a7;
+}
+
+.keyboard-container button:disabled {
+	background: #bdbdbd;
+	color: #eeeeee;
+	box-shadow: 0 6px #9e9e9e;
+}
+
+.space {
+	width: 4px;
+	height: auto;
+	display: inline-block;
+}
+
+.reset-btn-container{
+	display: inline-block;
+    text-align: center;
+	margin-top: 20px;
+    width: 250px;
+
+}
+
+
+.reset-btn-container button{
+    border: 1px;
+    border-radius: 30px;
+	font-family: inherit;
+	font-size: 1rem;
+	cursor: pointer;
+	width: auto;
+	margin: 5px 2px 2px 2px;
+	letter-spacing: 1px;
+	outline: none;
+	background: #457B9D;
+	color: #fff;
+	box-shadow: 0 4px 2px #111f34;
+	padding-top: 4px;
+    font-weight: bold;
+}
+
+.input-container{
+    font-weight: bolder;
+    font-size: large;
+    
+    
 }

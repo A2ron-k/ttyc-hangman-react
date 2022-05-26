@@ -64,11 +64,10 @@ class App extends Component {
 				>
 					{letter.toUpperCase()}
 				</button>
-				<div class="space"></div>
+				<div className="space"></div>
 			</>
 		));
 	}
-
 
 	/** This is a function that is called when the user clicks on a letter.
 	 * It takes the value of the letter and adds it to the state.guess.
@@ -122,30 +121,43 @@ class App extends Component {
 		}
 
 		return (
-			<div className="main-container">
-				<Header />
+			<div className="primary-container">
+				<div className="main-container">
+					<Header />
+					<div className="mistake-counter">
+						Wrong Guesses: {this.state.mistake} of{" "}
+						{this.defaultState.maxWrong}
+					</div>
 
-				<div>
-					Wrong Guesses: {this.state.mistake} of{" "}
-					{this.defaultState.maxWrong}
-				</div>
+					<div>
+						<img
+							className="graphic-container"
+							src={this.defaultState.graphics[this.state.mistake]}
+							alt=""
+						></img>
+					</div>
 
-				<div className="graphic-container">
-					<img
-						src={this.defaultState.graphics[this.state.mistake]}
-						alt=""
-					></img>
-				</div>
+					<div className="input-container">
+						<p>Hint: {this.state.desc}</p>
 
-				<div className="input-container">
-					<p>Hint: {this.state.desc}</p>
+						<div id="guess-text">
+							{!gameFin
+								? this.guessedWord()
+								: this.state.random_ans}
+						</div>
+						<br></br>
 
-					<p>
-						{!gameFin ? this.guessedWord() : this.state.random_ans}
-					</p>
-					<div className="keyboard-container">{keyboard}</div>
-          <br/>
-					<button onClick={this.resetGame}>Reset</button>
+						<div className="keyboard-container">{keyboard}</div>
+						<br />
+						<div className="reset-btn-container">
+							<button
+								className="reset-btn"
+								onClick={this.resetGame}
+							>
+								Reset
+							</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		);
