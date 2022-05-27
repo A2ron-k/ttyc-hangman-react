@@ -13,8 +13,10 @@ TLDR: An exploratory attempt to build a hangman web application using React Fram
 ## Screenshots
 * Mobile Viewport (< 640px) ![Screenshot 2022-05-27 234356](https://user-images.githubusercontent.com/104067522/170739501-a73eb354-73bc-46b0-92d8-cf127eee4c0d.jpg)
  <br>
-* Tablet (< 1007px) ![Screenshot 2022-05-27 234631](https://user-images.githubusercontent.com/104067522/170739522-d97c832f-17d5-4b83-81d6-85b5194ed3ae.jpg)
+ 
+* Tablet (< 1007px) ![Screenshot 2022-05-27 234631](https://user-images.githubusercontent.com/104067522/170740128-fb5a1d45-f9a9-450c-8c38-1f7e40e797cf.jpg)
 <br>
+
 * Desktop (1008px >) ![image](https://user-images.githubusercontent.com/104067522/170739582-47a63b03-70ed-41b4-a45f-ebb8270f7d90.png) 
 <br>
 
