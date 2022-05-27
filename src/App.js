@@ -42,7 +42,7 @@ class App extends Component {
 			.then((response) => response.json())
 			.then((data) =>
 				this.setState({
-					random_ans: data[0]["word"],
+					random_ans: data[0]["word"].toLowerCase(),
 					desc: data[0]["definition"],
 				})
 			);
