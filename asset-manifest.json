@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/ttyc-hangman-react/static/css/main.ba622ba6.css",
+    "main.js": "/ttyc-hangman-react/static/js/main.f04a6141.js",
+    "static/media/one.png": "/ttyc-hangman-react/static/media/one.ab839024f9c136b25f63.png",
+    "static/media/two.png": "/ttyc-hangman-react/static/media/two.8b55194859fe548ffd6a.png",
+    "static/media/three.png": "/ttyc-hangman-react/static/media/three.fee40563945d2fb8a802.png",
+    "static/media/four.png": "/ttyc-hangman-react/static/media/four.1344538e408c149b7bfe.png",
+    "static/media/five.png": "/ttyc-hangman-react/static/media/five.a5c4aee258cafc223312.png",
+    "static/media/six.png": "/ttyc-hangman-react/static/media/six.936d080322360192629d.png",
+    "static/media/start.png": "/ttyc-hangman-react/static/media/start.401e9161779d9fb57ac9.png",
+    "index.html": "/ttyc-hangman-react/index.html",
+    "main.ba622ba6.css.map": "/ttyc-hangman-react/static/css/main.ba622ba6.css.map",
+    "main.f04a6141.js.map": "/ttyc-hangman-react/static/js/main.f04a6141.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ba622ba6.css",
+    "static/js/main.f04a6141.js"
+  ]
+}
