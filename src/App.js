@@ -106,6 +106,11 @@ class App extends Component {
 		this.reFetch();
 	};
 
+	/**
+	 * This function is rendering the game. It is checking if the game is over, if the user has won, and
+	 * if the user has lost. It is also rendering the keyboard, the image, and the hint.
+	 * @returns The return statement is returning the JSX that is being rendered to the DOM.
+	 */
 	render() {
 		/* This is a boolean that is checking if the game is over. */
 		const gameFin = this.state.mistake >= this.defaultState.maxWrong;

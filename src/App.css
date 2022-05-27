@@ -88,7 +88,6 @@ html{
     text-align: center;
 	margin-top: 20px;
     width: 250px;
-
 }
 
 .reset-btn-container button{
@@ -106,6 +105,10 @@ html{
 	box-shadow: 0 4px 2px #111f34;
 	padding-top: 4px;
     font-weight: bold;
+}
+
+.reset-btn-container button:hover{
+	background-color: rgb(47, 162, 47);
 }
 
 .input-container{
